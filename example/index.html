@@ -1,167 +1,45 @@
 <html>
   <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Guess Calling Code Example</title>
   </head>
-  <style>
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-    body {
-      line-height: 1;
-    }
-    ol,
-    ul {
-      list-style: none;
-    }
-    blockquote,
-    q {
-      quotes: none;
-    }
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-      content: "";
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-    body {
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-        "Noto Color Emoji";
-      gap: 1rem;
-    }
-    .title {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      font-weight: 900;
-      filter: drop-shadow(6px -6px #e71d36);
-    }
-    p {
-      font-size: 2rem;
-      color: rgb(229, 231, 235);
-      font-weight: 500;
-    }
-    #calling-code {
-      font-size: 6rem;
-      font-weight: 900;
-    }
-  </style>
-  <body>
-    <h1 class="title">Guess Calling Code</h1>
-    <p>I guess your calling code is</p>
-    <span id="calling-code">loading</span>
+  <body
+    class="flex h-screen w-screen justify-center flex-col items-center gap-8 bg-black"
+  >
+    <h1
+      class="font-black text-4xl md:text-6xl text-slate-50 drop-shadow-[6px_-6px_#e71d36]"
+    >
+      Guess Calling Code
+    </h1>
+    <p class="font-bold text-2xl md:text-3xl text-slate-200">
+      I guess your calling code is
+    </p>
+    <span id="calling-code" class="text-8xl font-extrabold text-slate-100"
+      >loading</span
+    >
+    <a
+      rel="noopener"
+      target="_blank"
+      aria-label="Go to Github repo"
+      href="https://github.com/AnarchStudio/guess-calling-code"
+    >
+      <svg
+        class="w-10 h-10 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M5.75 14.25s-.5-2 .5-3c0 0-2 0-3.5-1.5s-1-4.5 0-5.5c-.5-1.5.5-2.5.5-2.5s1.5 0 2.5 1c1-.5 3.5-.5 4.5 0c1-1 2.5-1 2.5-1s1 1 .5 2.5c1 1 1.5 4 0 5.5s-3.5 1.5-3.5 1.5c1 1 .5 3 .5 3m-5-.5c-1.5.5-3-.5-3.5-1"
+        />
+      </svg>
+    </a>
     <script src="/index.js"></script>
     <script>
       const callingCode = guessCallingCode();
