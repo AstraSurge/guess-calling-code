@@ -14,32 +14,53 @@
     <p class="font-bold text-2xl md:text-3xl text-slate-200">
       I guess your calling code is
     </p>
-    <span id="calling-code" class="text-8xl font-extrabold text-slate-100"
+    <span id="calling-code" class="text-9xl font-extrabold text-slate-100"
       >loading</span
     >
-    <a
-      rel="noopener"
-      target="_blank"
-      aria-label="Go to Github repo"
-      href="https://github.com/AnarchStudio/guess-calling-code"
-    >
-      <svg
-        class="w-10 h-10 text-white"
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
+    <div class="flex space-x-4">
+      <a
+        rel="noopener"
+        target="_blank"
+        aria-label="Go to Github repo"
+        href="https://github.com/AnarchStudio/guess-calling-code"
       >
-        <path
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          d="M5.75 14.25s-.5-2 .5-3c0 0-2 0-3.5-1.5s-1-4.5 0-5.5c-.5-1.5.5-2.5.5-2.5s1.5 0 2.5 1c1-.5 3.5-.5 4.5 0c1-1 2.5-1 2.5-1s1 1 .5 2.5c1 1 1.5 4 0 5.5s-3.5 1.5-3.5 1.5c1 1 .5 3 .5 3m-5-.5c-1.5.5-3-.5-3.5-1"
-        />
-      </svg>
-    </a>
+        <svg
+          class="w-8 h-8 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M5.75 14.25s-.5-2 .5-3c0 0-2 0-3.5-1.5s-1-4.5 0-5.5c-.5-1.5.5-2.5.5-2.5s1.5 0 2.5 1c1-.5 3.5-.5 4.5 0c1-1 2.5-1 2.5-1s1 1 .5 2.5c1 1 1.5 4 0 5.5s-3.5 1.5-3.5 1.5c1 1 .5 3 .5 3m-5-.5c-1.5.5-3-.5-3.5-1"
+          />
+        </svg>
+      </a>
+      <a
+        rel="noopener"
+        target="_blank"
+        aria-label="Go to NPM package"
+        href="https://www.npmjs.com/package/guess-calling-code"
+      >
+        <svg
+          class="w-8 h-8 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="currentColor"
+            d="M4 28V4h24v24H4zM8.5 8.5v15H16v-12h4.5v12h3v-15h-15z"
+          />
+        </svg>
+      </a>
+    </div>
     <script src="/index.umd.js"></script>
     <script>
       const callingCode = guessCallingCode();
