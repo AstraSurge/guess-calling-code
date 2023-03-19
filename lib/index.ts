@@ -8,7 +8,7 @@ function getUserTimeZoneCity() {
   return result;
 }
 
-function guessCallingCode() {
+function guessCallingCode(): string | undefined {
   const timezoneCity = getUserTimeZoneCity();
   if (!timezoneCity) return;
   const callingCode = timezoneCityToCallingCodeObj[timezoneCity];

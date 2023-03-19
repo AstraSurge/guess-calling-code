@@ -22,7 +22,8 @@
   "license": "MIT",
   "scripts": {
     "build": "node_modules/.bin/rollup -c ./build/rollup.config.prod.js",
-    "dev": "node_modules/.bin/rollup -w -c ./build/rollup.config.dev.js"
+    "dev": "node_modules/.bin/rollup -w -c ./build/rollup.config.dev.js",
+    "deploy": "node_modules/.bin/rollup -c ./build/rollup.config.deploy.js"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",

@@ -14,6 +14,6 @@ module.exports = [
       format: "iife",
       name: "guessCallingCode",
     },
-    plugins: [typescript({ resolveJsonModule: true }), json()],
+    plugins: [typescript(), json()],
   },
 ];
