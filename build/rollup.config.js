@@ -9,11 +9,21 @@ const resolveFile = function (filePath) {
 module.exports = [
   {
     input: resolveFile("lib/index.ts"),
-    output: {
-      file: resolveFile("dist/index.js"),
-      format: "iife",
-      name: "guessCallingCode",
-    },
+    output: [
+      {
+        file: "dist/index.cjs.js",
+        format: "cjs",
+      },
+      {
+        file: "dist/index.esm.js",
+        format: "esm",
+      },
+      {
+        name: "guessCallingCode",
+        file: "dist/index.umd.js",
+        format: "umd",
+      },
+    ],
     plugins: [typescript(), json()],
   },
 ];

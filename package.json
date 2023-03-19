@@ -1,6 +1,6 @@
 {
   "name": "guess-calling-code",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Automatically identify and suggest user calling code for seamless phone number input in web apps.",
   "keywords": [
     "calling",
@@ -16,7 +16,13 @@
     "phone-input",
     "phone-number-input"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnarchStudio/guess-calling-code.git"
@@ -57,7 +63,6 @@
     "supports-preserve-symlinks-flag": "^1.0.0",
     "terser": "^5.16.6"
   },
-  "types": "./dist/index.d.ts",
   "bugs": {
     "url": "https://github.com/AnarchStudio/guess-calling-code/issues"
   },
