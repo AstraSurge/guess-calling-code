@@ -1,6 +1,6 @@
 {
   "name": "guess-calling-code",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Automatically identify and suggest user calling code for seamless phone number input in web apps.",
   "keywords": [
     "calling",
@@ -30,18 +30,16 @@
   "author": "Suiko <suiko@anarch.studio>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c ./build/rollup.config.prod.js",
-    "dev": "rollup -w -c ./build/rollup.config.dev.js",
-    "deploy": "rollup -c ./build/rollup.config.deploy.js"
+    "clean": "rimraf dist",
+    "build": "yarn clean && rollup -c ./build/rollup.config.prod.js",
+    "dev": "yarn clean && rollup -w -c ./build/rollup.config.dev.js",
+    "deploy": "rollup -c ./build/rollup.config.deploy.js",
+    "prepublishOnly": "yarn clean && npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
-    "rollup": "^3.19.1",
-    "rollup-plugin-serve": "^2.0.2",
-    "tslib": "^2.5.0",
-    "typescript": "^5.0.2",
     "acorn": "^8.8.2",
     "buffer-from": "^1.1.2",
     "commander": "^2.20.3",
@@ -55,13 +53,26 @@
     "picomatch": "^2.3.1",
     "randombytes": "^2.1.0",
     "resolve": "^1.22.1",
+    "rimraf": "^4.4.0",
+    "rollup": "^3.19.1",
+    "rollup-plugin-serve": "^2.0.2",
     "safe-buffer": "^5.2.1",
     "serialize-javascript": "^6.0.1",
     "smob": "^0.0.6",
     "source-map": "^0.6.1",
     "source-map-support": "^0.5.21",
     "supports-preserve-symlinks-flag": "^1.0.0",
-    "terser": "^5.16.6"
+    "terser": "^5.16.6",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "balanced-match": "^1.0.2",
+    "brace-expansion": "^2.0.1",
+    "glob": "^9.3.0",
+    "lru-cache": "^7.18.3",
+    "fs.realpath": "^1.0.0",
+    "minimatch": "^7.4.2",
+    "minipass": "^4.2.5",
+    "path-scurry": "^1.6.1"
   },
   "bugs": {
     "url": "https://github.com/AnarchStudio/guess-calling-code/issues"
