@@ -17,13 +17,16 @@
     "phone-number-input"
   ],
   "main": "dist/index.js",
-  "repository": "https://github.com/AnarchStudio/guess-calling-code.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnarchStudio/guess-calling-code.git"
+  },
   "author": "Suiko <suiko@anarch.studio>",
   "license": "MIT",
   "scripts": {
-    "build": "node_modules/.bin/rollup -c ./build/rollup.config.prod.js",
-    "dev": "node_modules/.bin/rollup -w -c ./build/rollup.config.dev.js",
-    "deploy": "node_modules/.bin/rollup -c ./build/rollup.config.deploy.js"
+    "build": "rollup -c ./build/rollup.config.prod.js",
+    "dev": "rollup -w -c ./build/rollup.config.dev.js",
+    "deploy": "rollup -c ./build/rollup.config.deploy.js"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.0.0",
@@ -32,6 +35,35 @@
     "rollup": "^3.19.1",
     "rollup-plugin-serve": "^2.0.2",
     "tslib": "^2.5.0",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "acorn": "^8.8.2",
+    "buffer-from": "^1.1.2",
+    "commander": "^2.20.3",
+    "estree-walker": "^2.0.2",
+    "function-bind": "^1.1.1",
+    "has": "^1.0.3",
+    "is-core-module": "^2.11.0",
+    "mime": "^3.0.0",
+    "opener": "^1.5.2",
+    "path-parse": "^1.0.7",
+    "picomatch": "^2.3.1",
+    "randombytes": "^2.1.0",
+    "resolve": "^1.22.1",
+    "safe-buffer": "^5.2.1",
+    "serialize-javascript": "^6.0.1",
+    "smob": "^0.0.6",
+    "source-map": "^0.6.1",
+    "source-map-support": "^0.5.21",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "terser": "^5.16.6"
+  },
+  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/AnarchStudio/guess-calling-code/issues"
+  },
+  "homepage": "https://github.com/AnarchStudio/guess-calling-code#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
   }
 }
