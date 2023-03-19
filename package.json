@@ -1,0 +1,36 @@
+{
+  "name": "guess-calling-code",
+  "version": "1.0.0",
+  "description": "Automatically identify and suggest user calling code for seamless phone number input in web apps.",
+  "keywords": [
+    "calling",
+    "code",
+    "phone",
+    "number",
+    "input",
+    "country",
+    "countries",
+    "country-code",
+    "country-calling-code",
+    "phone-number",
+    "phone-input",
+    "phone-number-input"
+  ],
+  "main": "dist/index.js",
+  "repository": "https://github.com/AnarchStudio/guess-calling-code.git",
+  "author": "Suiko <suiko@anarch.studio>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/rollup -c ./build/rollup.config.prod.js",
+    "dev": "node_modules/.bin/rollup -w -c ./build/rollup.config.dev.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.19.1",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2"
+  }
+}
