@@ -130,5 +130,5 @@ dist
 .pnp.*
 
 # for deploy
-example/index.js
+example/index.umd.js
 example/index.d.ts
