@@ -34,7 +34,7 @@
     "test": "jest",
     "build": "yarn clean && rollup -c ./build/rollup.config.prod.js",
     "dev": "yarn clean && rollup -w -c ./build/rollup.config.dev.js",
-    "deploy": "yarn test && rollup -c ./build/rollup.config.deploy.js",
+    "deploy": "rollup -c ./build/rollup.config.deploy.js",
     "prepublishOnly": "yarn test && yarn clean && npm run build"
   },
   "devDependencies": {
