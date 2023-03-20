@@ -24,6 +24,6 @@ module.exports = [
         format: "umd",
       },
     ],
-    plugins: [typescript(), json()],
+    plugins: [typescript({ exclude: ["lib/**/*.test.ts"] }), json()],
   },
 ];
