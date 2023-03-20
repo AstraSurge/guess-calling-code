@@ -1,11 +1,15 @@
 import * as timezoneCityToCallingCodeObj from "./metadata/timezoneCityToCallingCodeObject.json";
 
-function getUserTimeZoneCity() {
-  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  if (!userTimezone) return;
-  const timezoneArr = userTimezone.split("/");
-  const result = timezoneArr[timezoneArr.length - 1];
-  return result;
+function getUserTimeZoneCity(): string | undefined {
+  try {
+    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (!userTimezone) return;
+    const timezoneArr = userTimezone.split("/");
+    const result = timezoneArr[timezoneArr.length - 1];
+    return result;
+  } catch (error) {
+    return;
+  }
 }
 
 function guessCallingCode(): string | undefined {
