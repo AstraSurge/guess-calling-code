@@ -1,6 +1,6 @@
 {
   "name": "guess-calling-code",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Automatically identify and suggest user calling code for seamless phone number input in web apps.",
   "keywords": [
     "calling",
