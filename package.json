@@ -1,7 +1,7 @@
 {
   "name": "guess-calling-code",
   "version": "1.1.6",
-  "description": "Automatically identify and suggest user calling code for seamless phone number input in web apps.",
+  "description": "Client-side resolution for acquiring the user's dialing code enables seamless phone number input within browsers, and this library is also compatible with Node.js!",
   "keywords": [
     "calling",
     "code",
