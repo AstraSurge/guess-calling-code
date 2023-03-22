@@ -31,7 +31,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "yarn clean && rollup -c ./build/rollup.config.prod.js",
     "dev": "yarn clean && rollup -w -c ./build/rollup.config.dev.js",
     "deploy": "yarn test && rollup -c ./build/rollup.config.deploy.js",
