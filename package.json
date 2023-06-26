@@ -1,6 +1,6 @@
 {
   "name": "guess-calling-code",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Client-side resolution for acquiring the user's dialing code enables seamless phone number input within browsers, and this library is also compatible with Node.js!",
   "keywords": [
     "calling",
