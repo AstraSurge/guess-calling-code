@@ -20,7 +20,6 @@
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "exports": {
     ".": {
       "import": {
